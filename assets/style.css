@@ -3,7 +3,229 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
 }
 img {
     display: block;
+}
+ul {
+    list-style-type: none;
+}
+
+/*-------------- utility --------------  */
+.flex {
+    display: flex;
+    align-items: center;
+}
+.orange {
+    background-color: #FF6900;
+}
+.dark {
+    background-color: #1A1A1A;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+.fixed {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+
+
+/* ------------ header ------------- */
+
+header > .container {
+    
+    color: white;
+    text-align: center;
+    
+}
+header .flex {
+    justify-content: space-between;
+    height: 80px;
+    min-width: 200px
+}
+header img {
+    height: 40px;
+}
+.mr {
+    margin-right: 5px;
+}
+header .icons {
+    justify-content: flex-end;
+}
+.icons > .mr {
+    margin-right: 10px;
+}
+
+
+
+/*---------------- main ----------------- */
+
+main {
+    margin-top: 80px;
+}
+main  .flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+.image {
+    z-index: 9;
+    height: 720px;
+    background-image: unset;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image:hover {
+    z-index: 99;
+    height: 720px;
+    background-image: unset;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.image-1 {
+    background-image: url(./img/1.webp);
+}
+.image-1:hover {
+    background-image: url(./img/1b.webp);
+}
+.image-2 {
+    background-image: url(./img/2.webp);
+}
+.image-2:hover {
+    background-image: url(./img/2b.webp);
+}
+.image-3 {
+    background-image: url(./img/3.webp);
+}
+.image-3:hover {
+    background-image: url(./img/3b.webp);
+}
+.image-4 {
+    background-image: url(./img/4.webp);
+}
+.image-4:hover {
+    background-image: url(./img/4b.webp);
+}
+.image-5 {
+    background-image: url(./img/5.webp);
+}
+.image-5:hover {
+    background-image: url(./img/5b.webp);
+}
+.image-6 {
+    background-image: url(./img/6.webp);
+}
+.image-6:hover {
+    background-image: url(./img/6b.webp);
+}
+
+.card {
+    flex-basis: calc((100% / 3) - 10px);
+    margin: 20px 0;
+    
+}
+h3 {
+    font-weight: bold;
+}
+.red {
+    color: red;
+}
+.cancel {
+    text-decoration: line-through;
+}
+.heart {
+    top: 10px;
+    right: 0;
+    left: auto;
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.heart:hover {
+    top: 10px;
+    right: 0;
+    left: auto;
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+.bottom-tag {
+    bottom: 20px;
+    top: auto;
+    right: auto;
+    left: 0;
+    background-color: red;
+    color: white;
+    padding: 3px 10px;
+}
+.sostenibilita {
+    bottom: 20px;
+    top: auto;
+    right: auto;
+    left: 60px;
+    background-color: green;
+    color: white;
+    padding: 3px 10px;
+}
+.bis {
+    bottom: 20px;
+    top: auto;
+    right: auto;
+    left: 0px;
+    background-color: green;
+    color: white;
+    padding: 3px 10px;
+}
+.p-relative > .flex {
+    justify-content: flex-start;
+}
+
+
+
+
+
+/* -------------FOOTER----------- */
+
+footer {
+    height: 100px;
+    color: white;
+}
+footer .flex {
+    justify-content: space-between;
+
+}
+footer h2, h4 {
+    margin: 10px 0;
+}
+footer li {
+    margin-right: 10px;
 }
